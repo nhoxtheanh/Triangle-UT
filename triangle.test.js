@@ -55,6 +55,15 @@ describe('Kiểm tra hàm getType() của tam giác', () => {
         expect(result_messsage).to.equal("Day khong phai la tam giac");
     });
 
+    it('Không phải tam giác nếu A(0, 0)  B(1, 1) C(2, 2)', () => {
+        const A = new Point(0,0);
+        const B = new Point(1,1);
+        const C = new Point(2,2);
+        const triangle = new Triangle(A, B, C);
+        const result_messsage = triangle.getType();
+        expect(result_messsage).to.equal("Day khong phai la tam giac");
+    });
+
 
     it('Là tam giác vuông nếu A(0, 0)  B(1, 0) C(0, 2)', () => {
         const A = new Point(0,0);
