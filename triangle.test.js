@@ -1,9 +1,10 @@
-import Triangle from './triangle.js';
-import Point from './point.js';
+// import Triangle from './triangle.js';
+// import Point from './point.js';
 
-// const Triangle = require('./triangle.js');
-// const Point = require('./point.js');
+const Triangle = require('./triangle.js');
+const Point = require('./point.js');
 
+const chai = require('chai');
 const expect = chai.expect;
 
 describe('Kiểm tra hàm tính khoảng cách giữa các điểm calDistance(a, b)', () => {
